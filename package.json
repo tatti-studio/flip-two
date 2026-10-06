@@ -1,0 +1,32 @@
+{
+  "name": "flip-two",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "build:artifact": "tsc -b && vite build --mode artifact && node scripts/to-artifact.mjs",
+    "test": "vitest run",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "firebase": "^12.19.0",
+    "qrcode": "^1.5.4",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@types/node": "^24.13.3",
+    "@types/qrcode": "^1.5.6",
+    "@types/react": "^18.3.31",
+    "@types/react-dom": "^18.3.7",
+    "@vitejs/plugin-react": "^6.1.1",
+    "oxlint": "^1.81.0",
+    "typescript": "~6.0.2",
+    "vite": "^8.3.0",
+    "vite-plugin-pwa": "^2.0.0",
+    "vite-plugin-singlefile": "^2.3.3",
+    "vitest": "^5.0.3"
+  }
+}
